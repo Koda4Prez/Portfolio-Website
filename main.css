@@ -1,0 +1,219 @@
+/* Primary CSS file for the portfolio website. Based on a two column layout. */
+
+/*======[GENERAL CSS RULES]======*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {background-color: #F7F7F2;}
+
+body::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*======[SECTION CLASSES]=======*/
+.section {
+    float: left;
+    padding: 15px;
+}
+
+/*=========[VIEW CLASS]==========*/
+.view {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 15px;
+	text-align: justify;
+	line-height: 2.5;
+    width: 80%;
+
+    #main {
+        background-color: #FCFCF7;
+        margin: 10% 0 15% 15%;
+        padding: 50px;
+        width: 45%;
+
+        #img_left {
+            float: left;
+            margin: 20px 50px 20px 0;
+        }
+
+        #img_right {
+            float: right;
+            margin: 20px 0 20px 50px;
+        }
+    }
+
+    #intro {
+        background-color: #FCFCF7;
+        margin: 5% 0 15% 5%;
+        padding: 50px;
+        width: 65%;
+
+        img {
+            display: inline-block;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+            height: 600px;
+        }
+
+        h3 {
+            padding: 100px 200px 0 200px;
+        }
+        
+        p {
+            padding: 0 200px 0 200px;
+        }
+    }
+	
+	h3 {
+		font-style: italic;
+		color: #727272;
+	}
+
+    hr {margin: 150px 0 150px 0;}
+
+    mark {
+		background-color: #EBEBEB;
+		color: #727272;
+		font-style: italic;
+		border-radius: 5px;
+	}
+
+    a {
+        text-decoration-color: #E0E0E0;
+        color:  #727272;
+    }
+}
+
+/*=========[NAV CLASS]===========*/
+.terminal {
+    color: #a7a7a7;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    line-height: 1.75em;
+    width: 20%;
+    min-width: 20%;
+
+    #output {
+        white-space: pre-wrap;
+        word-break: break-all;
+        cursor: default;
+
+        a {
+            color: #727272;
+            text-decoration: none;
+        }
+    }
+
+    .cursor {
+        background: transparent;
+        animation: blink 1s step-end infinite;
+        width: 9px;
+        height: 1.275em;
+        margin-left: 3px;
+        vertical-align: text-bottom;
+    }
+
+    .cursor.active {
+        display: inline-block;
+    }
+}
+
+@keyframes blink {
+    50% {background: #727272;}
+}
+
+/*=======[PHOTO SECTION]=======*/
+.photos_section {
+    float: left;
+    padding: 5px;
+    width: 25%;
+}
+
+/*=========[PHOTO CARD]=========*/
+.photo_card {
+    #normal { /* Normal image size. Suggested photo resolution is 576 × 434px. */
+        border: 1px solid #3f3f3f;
+        border-radius: 5px 5px 0 0; 
+        margin-top: 10px;
+        width: 100%;
+        height: 434px;
+    }
+
+    #half {
+        border: 1px solid #3f3f3f;
+        border-radius: 5px 5px 0 0;
+        margin-top: 10px;
+        width: 100%; 
+        height: 187.5px;
+    }
+
+    #tall {
+        border: 1px solid #3f3f3f;
+        border-radius: 5px 5px 0 0;
+        margin-top: 10px;
+        max-width: 500px;
+        width: 100%; 
+        height: 926px;
+    }
+
+    #desc {
+        background-color: #E0E0E0;
+        border: 1px solid #3f3f3f;
+        border-radius: 0 0 5px 5px;
+        padding: 5px;
+        margin-top: -16px;
+        text-align: left;
+    }
+}
+
+/*=====[FAVORITE PHOTO CARDS]=====*/
+.fav_photo_card {
+    margin: 5% 0 15% 5%;
+    width: 65%;
+    
+    #fav_img {
+        border: 1px solid #3f3f3f;
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 750px;
+    }
+
+    #desc {
+        background-color: #E0E0E0;
+        border: 1px solid #3f3f3f;
+        border-radius: 0 0 5px 5px;
+        padding: 5px;
+        margin: -15px 0 0 0;
+        text-align: left;
+
+        p {
+            margin: 50px;
+        }
+    }
+}
+
+.type {
+  font-family: monospace;
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
+    linear-gradient(#00DFFC 0 0) 0 0;
+  background-size: calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .5s steps(1),   
+    t calc(var(--n)* .05s) steps(var(--n)) forwards;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
