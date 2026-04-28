@@ -13,3 +13,7 @@ document.getElementById('case').addEventListener('click', () => {
 document.getElementById('close-btn').addEventListener('click', () => {
     track.classList.remove('slide-case', 'slide-phot');
 });
+
+document.getElementById('close-btn2').addEventListener('click', () => {
+    track.classList.remove('slide-case', 'slide-phot');
+});

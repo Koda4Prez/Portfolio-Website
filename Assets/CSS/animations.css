@@ -6,7 +6,7 @@
     transform: translateX(-33.333%);
 }
 
-.slide-track.slide-case { transform: translateX(-2.5%); }
+.slide-track.slide-case {transform: translateX(-2.5%);}
 .slide-track.slide-phot  {transform: translateX(-56.666%);}
 
 .close-btn {
@@ -23,3 +23,18 @@
 }
 
 .close-btn:hover {color: rgba(255,255,255,1);}
+
+.close-btn2 {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px 0;
+    transition: color 0.2s;
+    font-family: 'Geist Mono', monospace;
+}
+
+.close-btn2:hover {color: rgba(255,255,255,1);}
