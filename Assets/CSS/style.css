@@ -1,11 +1,8 @@
-/*======[GENERAL CSS RULES]=====*/
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('../css/fonts.css');
 
+/*======[GENERAL CSS RULES]=====*/
 * {
     box-sizing: border-box;
-}
-
-* {
     scrollbar-width: none;
 
     &::-webkit-scrollbar {
@@ -13,142 +10,294 @@
     }
 }
 
-html, body {
+body {
+    background-color: #121013;
+    font-family: 'Khand-Light', sans-serif;
+    color: #aaaaaa;
+    user-select: none;
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-body {
-    color: #FCFCF7;
-    overflow: hidden;
-    position: relative;
-}
-
-hr {
-    margin: 100px 0 100px 0;
+h1, h2, h3, h4, h5, h6 {
+    filter: blur(0.6px);
 }
 
 
 /*======[SECTION CLASSES]=======*/
-.section {
-    width: 33.333%;
-    height: 100%;
-}
-
-.nav-section {
+.sidebar {
+    background-color: #121013;
+    border-right: 2px solid #222427;
+    width: 290px;
+    height: 100vh;
     display: flex;
-    overflow: hidden;
-}
+    flex-direction: row-reverse;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-.photo-section {
-    background: #852E2E;
-    background-image: url(../Textures/wallpaper.png);
-    display: flex;
-    flex-direction: column;
-}
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 6em;
+        padding: 0.5em;
+        margin: 0;
 
-.case-section {
-    background: #141517;
-    background-image: url(../Textures/noise.png);
-    padding: 20rem 0 20rem 0;
-    display: flex;
-    justify-content: center;
-    overflow-y: auto;
+        a {
+            font-family: 'Khand-Semibold', sans-serif;
+            font-size: 2em;
+            letter-spacing: 0.12em;
+            color: #7a7a7a;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px;
+            filter: blur(0.6px);
 
-    .text {
-        font-size: 14px;
-        line-height: 1.8;
-        color: #FCFCF7;
-        max-width: 700px;
-        letter-spacing: 0.04em;
-        text-align: justify;
-
-        h2, h3, h4 {
-            text-transform: uppercase;
-            color: #fcfcf780;
-        }
-
-        span {
-            color: #fcfcf780;
-        }
-
-        &::after {
-            padding-bottom: 20rem;
+            &:hover {
+                color: #bbbbbb;
+            }
         }
     }
 }
 
-
-/*=========[MAIN CLASS]=========*/
 .main {
-    background-color: #141517;
-    background-image: url(../Textures/noise.png);
-    padding: 12rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.15em;
+    display: column;
+    padding: 7em 8em 8em 8em;
+    float: left;
+
+    h1 {
+        font-family: 'khand-Semibold', sans-serif;
+        font-size: 8em;
+        letter-spacing: 0.1em;
+        margin: 0;
+
+        &::first-letter {
+            font-family: 'Telma-Medium', sans-serif;
+            font-size: 1.2em;
+        }
+    }
+
+    hr {
+        background-color: #222427;
+        width: 100vw;
+        height: 2px;
+        border: none;
+    }
+
+    span {margin: 0;}
+}
+
+.footer {
+    background-color: #121013;
+    font-family: 'Khand-Light', sans-serif;
+    color: #7a7a7a;
+    font-size: 0.8em;
+    letter-spacing: 0.15em;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #222427;
     display: flex;
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    overflow-y: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
 }
 
 
-/*=========[NAV CLASS]==========*/
-.sidebar {
-    background: #141517;
-    border-right: 1px solid #222427;
-    border-left: 1px solid #222427;
-    width: 8%;
-    height: 100%;
-    padding: 35px;
-    right: 0;
-    font-family: 'Geist Mono', monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    user-select: none;
-    overflow: hidden;
-}
-
-nav {
+/*======[WRAPPER CLASSES]=======*/
+.contentWrapper {
+    margin-left: 400px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    opacity: 0.8;
+}
+
+hr {
+    background-color: #222427;
+    width: 100vw;
+    height: 2px;
+    border: none;
+    margin: 0px;
+}
+
+#bgimage {
+    background-image: url('../img/icons/lazyface.svg');
+    background-size: center;
+    background-repeat: no-repeat;
+    background-position: -25em;
+    background-attachment: local;
+}
+
+.sidebarIndex {
+    background-color: #121013;
+    border-right: 2px solid #222427;
+    width: 425px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
     position: fixed;
+    top: 0;
+    left: 0;
+
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 6em;
+        padding: 0.5em;
+        margin: 0;
+
+        a {
+            font-family: 'Khand-Semibold', sans-serif;
+            font-size: 2em;
+            letter-spacing: 0.12em;
+            color: #7a7a7a;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px;
+            filter: blur(0.6px);
+
+            &:hover {
+                color: #bbbbbb;
+            }
+        }
+    }
+}
+
+.textSection {
+    padding: 10em 50em 10em 0em;
+    line-height: 2em;
+
+    p {margin-bottom: 2em;}
+
+    hr {
+        background-color: transparent;
+        width: 100%;
+        border-top: 2px dashed #222427;
+        margin: 3em 0 3em 0;
+    }
+}
+
+.textSectionIndex {
+    padding: 10em 25em 10em 25em;
+    line-height: 2em;
+
+    p {margin-bottom: 2em;}
+
+    hr {
+        background-color: transparent;
+        width: 100%;
+        border-top: 2px dashed #222427;
+    }
+}
+
+.caseStudy_mainContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.caseStudy_contentContainer {
+    font-family: 'Khand-Light', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.15em;
+    width: 50%;
+    padding: 2em;
+
+    .type {
+        font-weight: bold;
+        font-size: 0.75em;
+    }
 
     .title {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: larger;
+        font-size: 2em;
+    }
+
+    a {
+        color: #7a7a7a;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            color: #bbbbbb;
+
+            text-decoration: underline;
+            transition: 1s;
+        }
     }
 }
 
-nav a {
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #fcfcf780;
-    text-decoration: none;
-    padding: 6px;
-    cursor: pointer;
+.caseStudy_mediaContainer {
+    width: 50%;
+    
+    img {
+        padding: 1em;
+        width: 100%;
+        height: auto;
+    }
 }
 
-nav a:hover { /* Hover pseudo-class */
-    color: #FCFCF7;
-    text-decoration: underline;
+.caseDiscription {
+    span {
+        font-family: 'Telma-Regular', sans-serif;
+    }
 }
 
-nav a.active {
-    color: #FCFCF7;
-    font-style: italic;
+.index_mainContainer {
+    display: flex;
+    flex-direction: row;
 }
 
-
-/*========[PHOTO SECTION]=======*/
-.photos-section {
-    padding: 5px;
-    width: 25%;
-    overflow-y: auto;
+.index_contentContainerLeft {
+    width: 65%;
+    padding: 1em;
 }
 
-.photo-gallery {
-    padding: 12rem;
+.index_contentContainerLeftMedia {
+    font-family: 'Khand-Light', sans-serif;
+    font-weight: bold;
+    font-size: 0.75em;
+    display: flex;
+    flex-wrap: wrap;
+
+    .imgDescriptionLeft {
+        width: 49%;
+        margin: 0.1em;
+        padding: 0;
+        text-align: left;
+    }
+
+    .imgDescriptionRight {
+        width: 50%;
+        margin: 0.1em;
+        padding: 0;
+        text-align: right;
+    }
+}
+
+.index_contentContainerRight {
+    font-family: 'Khand-Light', sans-serif;
+    color: #aaaaaa;
+    width: 35%;
+    margin-left: 1em;
+    line-height: 2em;
+
+    p {margin-bottom: 2em;}
+}
+
+.index_contentContainerRightMedia {
+    font-weight: bold;
+    font-size: 0.75em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
 }

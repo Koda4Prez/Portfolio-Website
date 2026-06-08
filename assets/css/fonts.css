@@ -1,0 +1,119 @@
+/*===========[KHAND]============*/
+@font-face {
+  font-family: 'Khand-Light';
+  src: url('../fonts/khand/Khand-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-Regular';
+  src: url('../fonts/khand/Khand-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-Medium';
+  src: url('../fonts/khand/Khand-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-SemiBold';
+  src: url('../fonts/khand/Khand-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Khand-Bold';
+  src: url('../fonts/khand/Khand-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/*===========[TELMA]============*/
+@font-face {
+  font-family: 'Telma-Light';
+  src: url('../fonts/telma/Telma-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Telma-Regular';
+  src: url('../fonts/telma/Telma-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Telma-Medium';
+  src: url('../fonts/telma/Telma-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Telma-Bold';
+  src: url('../fonts/telma/Telma-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/*===========[ARRAY]============*/
+@font-face {
+  font-family: 'Array-Wide';
+  src: url('../fonts/array/Array-Wide.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Array-Regular';
+  src: url('../fonts/array/Array-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Array-Semibold';
+  src: url('../fonts/array/Array-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Array-SemiboldWide';
+  src: url('../fonts/array/Array-SemiboldWide.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Array-BoldWide';
+  src: url('../fonts/array/Array-BoldWide.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:  'Array-Bold';
+  src: url('../fonts/array/Array-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
