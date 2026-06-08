@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     background-color: #121013;
     font-family: 'Khand-Light', sans-serif;
-    color: #7a7a7a;
+    color: #8a8a8a;
     font-size: 0.8em;
     letter-spacing: 0.15em;
     width: 100vw;
@@ -185,6 +185,17 @@ hr {
         width: 100%;
         border-top: 2px dashed #222427;
         margin: 3em 0 3em 0;
+    }
+
+    h2 {
+        font-family: 'khand-Semibold', sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+
+        &::first-letter {
+            font-family: 'Telma-Medium', sans-serif;
+            font-size: 1.2em;
+        } 
     }
 }
 
@@ -300,4 +311,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     padding: 3em;
+}
+
+.pylonSigns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3em 0 3em;
+    column-gap: 50%;
 }
