@@ -175,7 +175,7 @@ hr {
 }
 
 .textSection {
-    padding: 10em 50em 10em 0em;
+    padding: 10em 50% 10em 0em;
     line-height: 2em;
 
     p {margin-bottom: 2em;}
@@ -196,6 +196,11 @@ hr {
             font-family: 'Telma-Medium', sans-serif;
             font-size: 1.2em;
         } 
+    }
+
+    .pfp {
+        float: left;
+        margin: 2em;
     }
 }
 
